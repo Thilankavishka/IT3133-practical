@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ChildCom from "./components/ChildCom";
+import "./App.css";
 
 function App() {
   const [childname, setChildname] = useState("Default");
