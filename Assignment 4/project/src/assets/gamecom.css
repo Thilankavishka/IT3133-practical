@@ -1,0 +1,58 @@
+.game-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.game-header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.animal-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.animal-card:hover {
+  transform: scale(1.05);
+}
+
+.animal-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result h2 {
+  font-size: 28px;
+  color: green;
+}
+
+.result button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result button:hover {
+  background-color: #45a049;
+}

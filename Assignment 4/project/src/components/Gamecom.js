@@ -1,5 +1,6 @@
 import { useState } from "react";
-import animals from "../assets/AnimalsDb";
+import animals from "../AnimalsDb";
+import "../assets/gamecom.css";
 
 export default function Gamecom() {
   const [targetAnimal, setTargetAnimal] = useState(getRandomAnimal());
@@ -24,25 +25,25 @@ export default function Gamecom() {
   };
   return (
     <>
-      <div className="">
+      <div className="game-page">
         <h1>Animal Matching Game</h1>
-        <div className="">
+        <div className="game-header">
           <h2>Find: {targetAnimal.name}</h2>
         </div>
-        <div className="">
+        <div className="animal-grid">
           {animals.map((animal) => (
             <div
               key={animal.id}
-              className=""
+              className="animal-card"
               onClick={() => handleAnimalClick(animal.id)}
             >
-              <img src={animal.image} alt={animal.name} />
+              <img src={animal.img} alt={animal.name} />
               <p>{animal.name}</p>
             </div>
           ))}
         </div>
         {result && (
-          <div className="">
+          <div className="result">
             <h2>{result}</h2>
             <button onClick={restartGame}>Play Again</button>
           </div>
