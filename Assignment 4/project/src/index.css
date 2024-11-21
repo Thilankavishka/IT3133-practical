@@ -1,0 +1,30 @@
+:root {
+  --body-background: white;
+  --title: black;
+  --primary: blue;
+}
+
+[data-theme="dark"] {
+  --body-background: rgb(0, 0, 0);
+  --title: rgb(255, 255, 255);
+  --primary: blue;
+}
+[data-theme="light"] {
+  --body-background: rgb(255, 254, 254);
+  --title: rgb(0, 0, 0);
+  --primary: rgb(97, 97, 255);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
